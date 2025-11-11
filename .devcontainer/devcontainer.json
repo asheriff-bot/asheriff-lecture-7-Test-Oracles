@@ -1,0 +1,26 @@
+{
+  "name": "Pierog.io",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "vitest.explorer"
+      ],
+      "settings": {
+        "editor.formatOnSave": false,
+        "javascript.updateImportsOnFileMove.enabled": "always"
+      }
+    }
+  },
+
+  "postCreateCommand": "npm install",
+  "forwardPorts": [],
+  "portsAttributes": {}
+}
